@@ -1,0 +1,1903 @@
+/*   
+Theme Name: Origin
+Theme URI: http://google.com
+Description: This is just a BLANK starter WordPress Theme template -- WordPress v3.0.1
+Author: Chris Coyier
+Author URI: http://chriscoyier.net
+Version: 2
+*/
+
+@font-face {
+  font-family: 'OpenSans-Semibold';
+  src: url('./fonts/OpenSans-Semibold.eot');
+  src: url('./fonts/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/OpenSans-Semibold.woff2') format('woff2'),
+       url('./fonts/OpenSans-Semibold.woff') format('woff'),
+       url('./fonts/OpenSans-Semibold.ttf') format('truetype'),
+       url('./fonts/OpenSans-Semibold.svg#OpenSans-Semibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('./fonts/Roboto-Bold.eot');
+  src: url('./fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/Roboto-Bold.woff2') format('woff2'),
+       url('./fonts/Roboto-Bold.woff') format('woff'),
+       url('./fonts/Roboto-Bold.ttf') format('truetype'),
+       url('./fonts/Roboto-Bold.svg#Roboto-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('./fonts/Roboto-Regular.eot');
+  src: url('./fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/Roboto-Regular.woff2') format('woff2'),
+       url('./fonts/Roboto-Regular.woff') format('woff'),
+       url('./fonts/Roboto-Regular.ttf') format('truetype'),
+       url('./fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url('./fonts/Roboto-Light.eot');
+  src: url('./fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/Roboto-Light.woff2') format('woff2'),
+       url('./fonts/Roboto-Light.woff') format('woff'),
+       url('./fonts/Roboto-Light.ttf') format('truetype'),
+       url('./fonts/Roboto-Light.svg#Roboto-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url('./fonts/MyriadPro-Regular.eot');
+  src: url('./fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/MyriadPro-Regular.woff2') format('woff2'),
+       url('./fonts/MyriadPro-Regular.woff') format('woff'),
+       url('./fonts/MyriadPro-Regular.ttf') format('truetype'),
+       url('./fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('./fonts/roboto-medium-webfont.eot');
+    src: url('./fonts/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/roboto-medium-webfont.woff2') format('woff2'),
+         url('./fonts/roboto-medium-webfont.woff') format('woff'),
+         url('./fonts/roboto-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a {
+	text-decoration: none !important;
+}
+
+#header {
+	background: #fff;
+	z-index: 1000 !important;
+	font-family: Roboto-Bold;
+}
+
+.header-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.clearall {
+	clear: both;
+}
+
+.b-header a{
+	background: #50b2e8 none repeat scroll 0 0;
+	border-radius: 10px;
+	margin-bottom: 5px;
+	text-align: center;
+	width: 100px;
+	float: right;
+	color: #fff;
+}
+
+.b-header a:hover{
+	color: #23527C;
+}
+
+.call {
+	margin: 5px 0;
+	color: #707081;
+}
+
+#header {
+	box-shadow: 0 0 5px 3px #000;
+	position: relative;
+	z-index: 1;
+}
+
+#header .navi ul > li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+#header .navi ul > li:hover a{
+	background: #0092DD;
+	color: #fff;
+	padding: 10px 33px;
+}
+
+#header .navi ul > li a{
+	padding: 10px 33px;
+	color: #535362;
+	font-weight: bold;
+}
+
+#header .navi {
+	height: 29px;
+}
+
+#header .navi ul {
+	padding-left: 0 !important;
+}
+
+#header .navi .container > li > ul.dropdown-menu{
+	background-color: transparent;
+}
+
+#header .navi .container > li > ul.dropdown-menu li a{
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+#header .navi .container > li > ul.dropdown-menu li a:hover{
+	background: #0092DD;
+}
+
+.carousel-indicators {
+	bottom: 0;
+}
+
+#banner-slider #myCarousel .item{
+  min-height: 511px;
+}
+
+#banner-slider #myCarousel .item {
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+#banner-slider #myCarousel .carousel-inner .carousel-caption {
+  top: -3%;
+  z-index: 1;
+  text-align: left;
+  position: static;
+}
+
+#banner-slider #myCarousel .carousel-inner .carousel-caption h3 {
+  font-size: 40px;
+  font-family: Roboto-Bold;
+
+}
+
+#banner-slider #myCarousel .carousel-inner .carousel-caption p {
+  font-size: 18px;
+  font-family: Roboto-Regular;  
+}
+
+.body1 .container {
+	text-align: center;
+}
+
+.h-body1 {
+	margin: 0 auto;
+	max-width: 697px;
+	font-size: 17px;
+  	font-family: Roboto-Regular;  	
+}
+
+.h-title1 {
+	font-size: 40px;
+	font-family: Roboto-Light;  
+}
+
+.body1 {
+  color: #747485;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+
+.f-body1 {
+	color: #747485;
+	margin-top: 8px;
+}
+
+.f-body1 .container {	
+	background: #fff;
+}
+
+.f-content {
+	color: #747485;
+	font-size: 18px;
+	padding: 50px 100px;
+	line-height: 40px;
+	font-family: Roboto-Regular;  	
+}
+
+.body3 {
+	background: url(./images/backgroud-body2-h.jpg) repeat-x top left;
+}
+.body2 {
+	background: url(./images/backgroud-body2.jpg) no-repeat center center;
+	padding-top: 80px;
+	color: #747485;
+  background-size: cover;
+}
+
+.b-getstart {
+	background: #50b2e8 none repeat scroll 0 0;
+	border-radius: 20px;
+	color: #fff;
+	display: inline-block;
+	font-size: 19px;
+	margin: 5px auto;
+	padding: 2px 21px;
+	text-align: center;
+	font-family: Roboto-Bold;
+}
+
+.number {
+	text-align: center;
+}
+
+.title2 {
+	font-size: 28px;
+	font-family: MyriadPro-Regular;
+}
+
+.getstart {
+  background: #0f0f1e;
+  color: #fff;
+  margin: 0 9%;
+  padding: 51px 40px;
+  text-align: center;
+  position: relative;
+}
+
+.getstart-title {
+	font-size: 28px;
+	font-family: OpenSans-Semibold;
+}
+
+.getstart-content {
+	font-size: 17px;
+	margin-bottom: 15px;
+	font-family: Roboto-Regular;
+}
+
+.body2 .container .concact {
+	text-align: center;
+	font-family: Roboto-Regular;
+}
+
+.content2 {
+	margin: 15px 0;
+	font-family: Roboto-Regular;
+  font-size: 18px;
+  color: #737385;
+}
+
+.content-box {
+	font-family: Roboto-Regular;
+  font-size: 18px;
+}
+
+.body2 .container .row .box {
+	background: #fff;
+	box-shadow: 0 0 7px -2px #000;
+	margin: 35px 0;
+	padding: 15px;
+}
+
+.body2 .container .row .box .col-md-6 {
+	padding: 0;
+}
+
+.readmore a {
+	background: #50b2e8 none repeat scroll 0 0;
+	border-radius: 14px;
+	color: #fff;
+	font-family: Roboto-Bold;
+	padding: 5px 50px;
+	text-align: center;
+}
+
+.readmore a:hover {
+	color: #23527C;
+}
+
+.readmore {
+	bottom: 10px;
+	position: absolute;
+	width: 100%;
+}
+
+.col-md-6.img {
+	width: 210px;
+}
+
+.col-md-6.content {
+	width: 51%;
+	margin-left: 30px;
+	min-height: 210px;
+	position: relative;
+	color: #747485;
+}
+
+.title-box {
+  font-size: 28px;
+  line-height: 40px;
+  margin-bottom: 30px;
+  font-family: OpenSans-Semibold;
+}
+
+.carousel-inner {
+  min-height: 250px;
+  max-height: 400px;
+}
+
+.footer {
+	background: #0F0E1E;
+	padding: 35px 0;
+	color: #fff;
+	text-align: center;
+}
+
+.footer .container ul > li a {
+	font-family: Roboto-Bold;
+  color: #fff;
+}
+
+.footer .container ul > li a:hover {
+	font-family: Roboto-Bold;
+  	color: #23527C;
+}
+
+.footer .container > ul {
+  margin-bottom: 30px;
+  margin-top: 15px;
+  padding-left: 0;
+  padding-right: 70px;
+}
+
+.footer .container ul > li {
+  display: inline-block;
+  margin: 0 3%;
+}
+
+.b-footer a {
+	background: #bbbbbb none repeat scroll 0 0;
+	border-radius: 14px;
+	color: #fff;
+	display: block;
+	font-family: Roboto-Bold;
+	text-align: center;
+	width: 100px;
+	margin: 0 5px;
+}
+
+.b-footer a:hover {
+	color: #23527C;
+}
+
+.b-footer {
+	display: inline-block;
+}
+
+.icon-footer {
+  margin: 25px;
+}
+
+.icon-footer > a{
+  margin: 0 15px;
+}
+
+/* .baner {
+  background: url(./images/baner.jpg) no-repeat center center;
+  min-height: 342px;
+  background-size: cover;
+} */
+
+body.inner-page .baner {
+  position: relative;
+  background-color: #eee;
+  min-height: 342px;
+}
+
+body.inner-page .baner > .container {
+  background: url(./images/baner.jpg) no-repeat center center #eee;
+  min-height: 342px;
+  position: relative;
+}
+
+.gradient-overlay {
+  background: rgba(0, 0, 0, 0) url("./images/bg-gradient.png") no-repeat scroll center center;
+  left: 0;
+  min-height: 342px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+/*body.inner-page .baner::before {
+  background: url("./images/bg-gradient.png") no-repeat center center #eee;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}*/
+
+/* body.inner-page .body .baner > .container {
+  background: url(./images/baner.jpg) no-repeat center center;
+  min-height: 342px;
+  background-size: cover;
+} */
+
+/* .baner-text {
+  background: #0090e0 none repeat scroll 0 0;
+  color: #fff;
+  display: inline-block;
+  font-size: 13px;
+  padding: 10px 30px;
+  font-family: Roboto-Bold;
+} */
+
+.baner-text {
+  background: #0090e0 none repeat scroll 0 0;
+  color: #fff;
+  display: inline-block;
+  font-family: Roboto-Bold;
+  font-size: 13px;
+  left: 0;
+  padding: 10px 30px;
+  position: absolute;
+  top: 20px;
+  z-index: 9999;
+}
+
+.baner-text .acc {
+  font-size: 26px;
+}
+
+.body .baner .container {
+  padding-top: 15px;
+}
+
+.body-img {
+	width: 100%;
+}
+
+.botton-content {
+	color: #fff;
+	background: #4AB1EA;
+	padding: 40px 75px;
+	font-size: 20px;
+	font-family: Roboto-Regular;
+  text-align: center;
+}
+
+.h-ct {
+  font-size: 80px;
+  height: 60px;
+  text-align: center;
+}
+
+.Joe {
+  text-align: right;
+}
+
+.tt-content {
+  color: #008ce3;
+  font-size: 21px;
+  font-family: Roboto-Bold;
+
+}
+
+.callus {
+	background: #0F0E1E;
+	padding: 40px 130px;
+}
+
+
+
+body {
+	background: #F7F7F7;
+}
+
+.f-body2 {
+  color: #747485;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.tt-content-f {
+  color: #fff;
+  display: inline-block;
+  font-size: 24px;
+  font-family: Roboto-Bold;
+}
+
+.number-ct {
+  font-size: 18px;
+  font-family: Roboto-Regular;
+}
+
+.f-body2 .callus .b-getstart {
+  font-size: 24px;
+  position: relative;
+  right: -21px;
+  top: -11px;
+}
+
+.f-c-f {
+  margin: 20px 0;
+  line-height: 35px;
+}
+
+.logo {
+  margin-bottom: 15px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.container.h-header {
+  position: relative;
+}
+
+#navigation .container .row .navbar.navbar-default .nav.navbar-nav.sm {
+	float: none;
+}
+
+#navigation .container .row .navbar.navbar-default .nav.navbar-nav.sm > li > a {
+  color: #535362;
+  padding: 10px 44px;
+}
+
+#navigation .container .row .navbar.navbar-default .nav.navbar-nav.sm > li > a:hover, #navigation .container .row .navbar.navbar-default .nav.navbar-nav.sm > li > a:focus, #navigation .container .row .navbar.navbar-default .nav.navbar-nav.sm > li.active > a {
+  background: #0092DD !important;
+  color: #fff !important;
+}
+
+#navigation .container .row .navbar.navbar-default .nav.navbar-nav.sm > li {
+  margin: 0 10px;
+  float: none;
+  display: inline-block;
+}
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+  background-color: #0092DD !important;
+}
+
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+  background-color: #fff;
+  color: #0092DD;
+}
+
+.dropdown-menu > li > a{
+	font-weight: normal;
+	font-family: Roboto-Bold;
+	padding: 5px 28px;
+  color: #535362;
+}
+
+.dropdown-menu {
+	left: -10px !important;
+	top: 39.4px !important;
+	box-shadow: none;
+	border-radius: 0;
+	padding: 20px 1px 15px;
+	border: none;
+	background: #fff url("./images/icon-navbar.png") no-repeat scroll center 0px;
+}
+
+.dropdown-menu.sm-nowrap > li {
+  margin: 0 15px;
+}
+
+.sub-arrow {
+	display: none !important;
+}
+
+.navbar.navbar-default {
+	margin-bottom: 0;
+	border: none;
+	background:none;
+	min-height: auto;
+}
+
+.body {
+  margin-bottom: -27px;
+  position: relative;
+  top: -20px;
+  z-index: 998;
+}
+
+.carousel-indicators li {
+	/* background: #fff; */
+	border: none;
+	margin: 0;
+	background: url("./images/bullet-inactive.png") no-repeat center center;
+	width: 20px;
+	height: 20px;
+  margin-right: 5px;
+}
+
+.carousel-indicators .active {
+	/* background: #0A90D3; */
+	width: 20px;
+	height: 20px;
+	background: url("./images/bullet-active.png") no-repeat center center;
+  margin-right: 5px;
+}
+
+.copyright {
+	font-family: robotomedium;
+}
+
+.parent-item-mobile {
+  display: none;
+}
+
+/* Update Notes */
+#header section#navigation {
+  border-bottom: 1px solid #0193da;
+  border-top: 1px solid #0193da;
+  z-index: 9999;
+}
+
+#header section#navigation ul.nav li ul.dropdown-menu {
+  border: 2px solid #0190e0;
+  box-shadow: 2px 5px 5px #000;
+}
+
+.has-grid-bg {
+  background: rgba(15, 15, 30, 0.4) url("./images/grid-bg.png") repeat scroll center top;
+}
+
+.callus.has-grid-bg {
+  background: rgba(15, 15, 30, 0.4) url("./images/inner-quote-pattern.png") repeat scroll center top;
+}
+
+.botton-content .h-ct {
+  position: relative;
+}
+
+.botton-content .h-ct::before {
+  background: rgba(0, 0, 0, 0) url("./images/line-divide.jpg") repeat-x scroll center center;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 35px;
+  width: 45%;
+}
+
+.botton-content .h-ct::after {
+  background: rgba(0, 0, 0, 0) url("./images/line-divide.jpg") repeat-x scroll center center;
+  content: "";
+  height: 1px;
+  right: 0px;
+  position: absolute;
+  top: 35px;
+  width: 45%;
+}
+/* End Update Notes */
+
+/*Start Responsive*/
+@media only screen and (min-width: 980px) {
+	#header section#navigation ul.nav li ul.dropdown-menu > li > a {
+	  border-bottom: 2px solid #f7f7f7;
+	  padding-bottom: 10px;
+	  padding-top: 10px;
+	}
+
+	#header section#navigation ul.nav li ul.dropdown-menu > li:last-child > a {
+	  border-bottom: none;
+	  padding-bottom: 0px;
+	}
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
+	#navigation .container .row .navbar.navbar-default .nav.navbar-nav.sm > li > a {
+	padding: 8px 24px;
+}
+
+.dropdown-menu {
+  left: -28px !important;
+  padding: 20px 0px 15px;
+  top: 35.4px !important;
+}
+
+
+.body2 {
+	background: rgba(0, 0, 0, 0) url("./images/backgroud-body2.jpg") no-repeat scroll center top / cover;
+	padding-top: 80px;
+	color: #747485;
+}
+
+.getstart {
+  padding: 27px 14px;
+}
+
+.col-md-6.content {
+  margin-left: 15px;
+  width: 47%;
+}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+
+#navigation .container .row .navbar.navbar-default .nav.navbar-nav.sm > li > a {
+	padding: 8px 9px;
+}
+
+.dropdown-menu {
+  left: -28px !important;
+  padding: 20px 0px 15px;
+  top: 35.4px !important;
+}
+
+.dropdown-menu.sm-nowrap > li {
+	margin: 0;
+}
+
+.body2 {
+	background: rgba(0, 0, 0, 0) url("./images/backgroud-body2.jpg") no-repeat scroll center top / cover;
+	padding-top: 80px;
+	color: #747485;
+}
+
+.getstart {
+  margin: 30px 9% 0;
+}
+
+.body3 .body2 .container .row .col-md-6 {
+  max-width: 372px;
+  float: left;
+}
+
+.col-md-6.content, .col-md-6.img, .col-md-6.img img {
+	width: 100%;
+}
+
+.title-box {
+  margin-top: 20px;
+}
+
+.footer .container > ul {
+	padding-right: 0;
+}
+
+.footer .container ul > li {
+  margin: 0 2%;
+}
+
+.f-body2 .callus .b-getstart {
+  right: -123px;
+  top: 0;
+}
+
+#navigation .navbar-collapse.collapse {
+  display: none !important;
+}
+
+#navigation .navbar-collapse.collapse.in {
+  display: block !important;
+  padding: 0;
+}
+#navigation .navbar-header .collapse, .navbar-toggle {
+  display:block !important;
+}
+
+#navigation .navbar-header {
+  float:none;
+}
+
+#navigation ul.nav li .dropdown-menu {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+
+#navigation ul.nav.navbar-nav > li.open a.has-submenu.highlighted {
+  position: relative;
+}
+
+#navigation ul.nav.navbar-nav > li.open a.has-submenu.highlighted::after {
+  background: rgba(0, 0, 0, 0) url("./images/icon-navbar.png") no-repeat scroll center center;
+  bottom: -15px;
+  content: "";
+  display: block;
+  height: 15px;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 999;
+}
+
+#navigation button.navbar-toggle {
+  border: medium none;
+  float: none;
+  left: 20px;
+  position: absolute;
+  top: -85px;
+}
+
+.header-right {
+  position: absolute;
+  right: 20px;
+  text-align: center;
+}
+
+#navigation button.navbar-toggle span.icon-bar {
+  width: 50px;
+  height: 3px;
+}
+
+#navigation button.navbar-toggle:hover span.icon-bar, #navigation button.navbar-toggle:focus span.icon-bar {
+  background-color: #0092dd;
+}
+
+#navigation button.navbar-toggle::before {
+  content: "Menu";
+  font-family: "Roboto-Bold";
+  text-transform: uppercase;
+}
+
+#navigation button.navbar-toggle:hover::before, #navigation button.navbar-toggle:focus::before {
+  color: #0092dd;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background: transparent;
+}
+
+#header section#navigation ul.nav li ul.dropdown-menu {
+  box-shadow: none;
+  max-width: 100% !important;
+  padding-top: 0;
+  margin-top: 2px;
+  border-top: 2px solid #cccccc !important;
+  border-bottom: 2px solid #cccccc !important;
+  border-left: none;
+  border-right: none;
+  padding-bottom: 0;
+}
+
+#header section#navigation ul.nav li ul.dropdown-menu li {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+#header section#navigation ul.nav li ul.dropdown-menu li a {
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+#header section#navigation {
+  border: none;
+}
+
+#navigation .nav.navbar-nav li a {
+  border-bottom: 2px solid #f7f7f7;
+  padding-bottom: 15px !important;
+  padding-top: 15px !important;
+}
+
+#navigation .nav.navbar-nav li {
+  margin-bottom: 2px !important;
+}
+
+.has-submenu.highlighted {
+  color: #fff !important;
+}
+
+#navigation .navbar-collapse {
+  border: 2px solid #0092dd;
+}
+
+#navigation ul.nav.navbar-nav > li {
+  display: block !important;
+  margin: 0 !important;
+}
+
+#navigation ul.nav.navbar-nav li a {
+  text-align: center;
+}
+
+#navigation ul.nav.navbar-nav li > ul.dropdown-menu {
+  float: none !important;
+  left: 0 !important;
+  position: relative !important;
+  top: 0 !important;
+  z-index: 1;
+}
+
+#banner-slider #myCarousel .carousel-caption {
+  width: 40%;
+}
+
+.body2 {
+  /* fallback */
+  background-color: #d7edfb;
+  background-image: url(./images/radial_bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  /* Safari 4-5, Chrome 1-9 */
+  /* Can't specify a percentage size? Laaaaaame. */
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#fff), to(#d7edfb));
+
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(circle, #fff, #d7edfb);
+
+  /* Firefox 3.6+ */
+  background: -moz-radial-gradient(circle, #fff, #d7edfb);
+
+  /* IE 10 */
+  background: -ms-radial-gradient(circle, #fff, #d7edfb);
+
+  /* Opera couldn't do radial gradients, then at some point they started supporting the -webkit- syntax, how it kinda does but it's kinda broken (doesn't do sizing) */
+
+  padding-top: 20px;
+
+}
+
+.title2 {
+  font-family: "Roboto-Bold";
+  text-align: center;
+}
+
+.body3 .body2 .container .row .col-md-6 {
+  float: none;
+  max-width: 100%;
+}
+
+.box > .col-md-6.img {
+  float: left !important;
+  width: 45%;
+}
+
+.box > .col-md-6.content {
+  float: right !important;
+  width: 50%;
+}
+
+.title-box {
+  margin-bottom: 10px;
+}
+
+.getstart.has-grid-bg {
+  margin: 30px 0;
+}
+
+.parent-item-mobile {
+  display: block !important;
+}
+
+.callus.has-grid-bg {
+  padding: 30px;
+}
+
+.callus.has-grid-bg .tt-content-f {
+  float: left;
+  width: 75%;
+}
+
+.callus.has-grid-bg .b-getstart {
+  float: right;
+  font-size: 18px;
+  right: 0;
+  top: 15px;
+  width: 25%;
+}
+
+.f-body2 > .container {
+  padding: 0;
+}
+
+}
+
+
+
+@media only screen and (min-width: 667px) and (max-width: 767px) {
+
+.getstart.has-grid-bg {
+  margin: 30px 0;
+}
+
+.logo {
+  margin-left: 100px;
+  text-align: left;
+}
+
+.b-header {
+  text-align: right;
+}
+
+.parent-item-mobile {
+  display: block !important;
+}
+
+#navigation .container .row .navbar.navbar-default .nav.navbar-nav.sm > li {
+  display: block;
+  text-align: center;
+}
+
+.b-header a {
+  float: none;
+  display: inline-block;
+}
+
+.header-right {
+  position: static;
+  text-align: center;
+}
+
+.getstart {
+  padding: 20px 10px;
+}
+
+.footer .container ul > li {
+  display: block;
+}
+
+.footer .container > ul {
+  padding-right: 0;
+}
+
+.col-md-6.content, .col-md-6.img, .col-md-6.img img {
+  width: 100%;
+}
+
+.body2 {
+  background: rgba(0, 0, 0, 0) url("./images/backgroud-body2.jpg") no-repeat scroll center top / cover;
+  padding-top: 80px;
+  color: #747485;
+}
+
+.title-box {
+  margin-top: 20px;
+}
+
+.f-content {
+  padding: 50px 5px;
+}
+
+.botton-content {
+  padding: 40px 20px;
+}
+
+.callus {
+  padding: 40px 39px;
+}
+
+#navigation ul.nav li .dropdown-menu {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+
+#navigation ul.nav.navbar-nav > li.open a.has-submenu.highlighted {
+  position: relative;
+}
+
+#navigation ul.nav.navbar-nav > li.open a.has-submenu.highlighted::after {
+  background: rgba(0, 0, 0, 0) url("./images/icon-navbar.png") no-repeat scroll center center;
+  bottom: -15px;
+  content: "";
+  display: block;
+  height: 15px;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 999;
+}
+
+#navigation button.navbar-toggle {
+  border: medium none;
+  float: none;
+  left: 20px;
+  position: absolute;
+  top: -85px;
+}
+
+.header-right {
+  position: absolute;
+  right: 20px;
+  text-align: center;
+}
+
+#navigation button.navbar-toggle span.icon-bar {
+  width: 50px;
+  height: 3px;
+}
+
+#navigation button.navbar-toggle:hover span.icon-bar, #navigation button.navbar-toggle:focus span.icon-bar {
+  background-color: #0092dd;
+}
+
+#navigation button.navbar-toggle::before {
+  content: "Menu";
+  font-family: "Roboto-Bold";
+  text-transform: uppercase;
+}
+
+#navigation button.navbar-toggle:hover::before, #navigation button.navbar-toggle:focus::before {
+  color: #0092dd;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background: transparent;
+}
+
+#header section#navigation ul.nav li ul.dropdown-menu {
+  box-shadow: none;
+  max-width: 100% !important;
+  padding-top: 0;
+  margin-top: 2px;
+  border-top: 2px solid #cccccc !important;
+  border-bottom: 2px solid #cccccc !important;
+  border-left: none;
+  border-right: none;
+  padding-bottom: 0;
+}
+
+#header section#navigation ul.nav li ul.dropdown-menu li {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+#header section#navigation ul.nav li ul.dropdown-menu li a {
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+#header section#navigation {
+  border: none;
+}
+
+#navigation .nav.navbar-nav li a {
+  border-bottom: 2px solid #f7f7f7;
+  padding-bottom: 15px !important;
+  padding-top: 15px !important;
+}
+
+#navigation .nav.navbar-nav li {
+  margin-bottom: 2px !important;
+}
+
+.has-submenu.highlighted {
+  color: #fff !important;
+}
+
+#navigation .navbar-collapse {
+  border: 2px solid #0092dd;
+}
+
+#banner-slider #myCarousel .carousel-inner .carousel-caption h3 {
+  font-size: 30px;
+}
+
+.carousel-inner {
+  max-height: 300px;
+}
+
+.body2 {
+  /* fallback */
+  background-color: #d7edfb;
+  background-image: url(./images/radial_bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  /* Safari 4-5, Chrome 1-9 */
+  /* Can't specify a percentage size? Laaaaaame. */
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#fff), to(#d7edfb));
+
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(circle, #fff, #d7edfb);
+
+  /* Firefox 3.6+ */
+  background: -moz-radial-gradient(circle, #fff, #d7edfb);
+
+  /* IE 10 */
+  background: -ms-radial-gradient(circle, #fff, #d7edfb);
+
+  /* Opera couldn't do radial gradients, then at some point they started supporting the -webkit- syntax, how it kinda does but it's kinda broken (doesn't do sizing) */
+
+  padding-top: 20px;
+
+}
+
+.title2 {
+  font-family: "Roboto-Bold";
+  text-align: center;
+}
+
+.content2 {
+  text-align: center;
+}
+
+.b-getstart {
+  font-size: 20px !important;
+  padding: 5px 40px;
+}
+
+.footer > .container > ul > li {
+  margin-bottom: 20px;
+}
+
+.icon-footer > a {
+  display: inline-block;
+  margin: 5px;
+}
+
+.box > .col-md-6.img {
+  float: left;
+  margin-right: 3%;
+  width: 55%;
+}
+
+.box > .col-md-6.content {
+  float: right;
+  margin-left: 0;
+  width: 42%;
+  min-height: 1px;
+  height: auto;
+}
+
+.readmore a {
+  display: block;
+  padding: 5px 10px;
+}
+
+.title-box {
+  margin-bottom: 5px;
+  line-height: 30px;
+}
+
+.readmore {
+  position: relative;
+  bottom: 0;
+  margin-top: 10px;
+}
+
+.getstart-title {
+  font-size: 22px;
+}
+
+.getstart-content {
+  font-size: 14px;
+}
+
+.b-getstart {
+  font-size: 14px;
+}
+
+.has-grid-bg {
+  margin-top: 25px;
+}
+
+.baner-text .acc {
+  font-size: 18px;
+}
+
+.body-img {
+  min-height: 150px;
+}
+
+.botton-content .h-ct::before, .botton-content .h-ct::after {
+  width: 40%;
+}
+
+.tt-content-f {
+  text-align: center;
+  display: block;
+}
+
+.callus {
+  padding: 20px;
+}
+
+.f-body2 .callus .b-getstart {
+  display: block;
+  padding: 5px 20px;
+  right: 0;
+  top: 10px;
+  width: 40%;
+}
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 666px) {
+
+.getstart.has-grid-bg {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.parent-item-mobile {
+  display: block !important;
+}
+
+#navigation .container .row .navbar.navbar-default .nav.navbar-nav.sm > li {
+	display: block;
+	text-align: center;
+}
+
+.b-header a {
+  float: none;
+  display: inline-block;
+}
+
+.header-right {
+  position: static;
+  text-align: center;
+}
+
+.getstart {
+  padding: 20px 10px;
+}
+
+.footer .container ul > li {
+	display: block;
+}
+
+.footer .container > ul {
+	padding-right: 0;
+}
+
+.col-md-6.content, .col-md-6.img, .col-md-6.img img {
+	width: 100%;
+}
+
+.body2 {
+	background: rgba(0, 0, 0, 0) url("./images/backgroud-body2.jpg") no-repeat scroll center top / cover;
+	padding-top: 80px;
+	color: #747485;
+}
+
+.title-box {
+  margin-top: 20px;
+}
+
+.f-content {
+  padding: 50px 5px;
+}
+
+.botton-content {
+  padding: 40px 20px;
+}
+
+.callus {
+  padding: 40px 39px;
+}
+
+/* .f-body2 .callus .b-getstart {
+  right: -75px;
+  top: 0;
+} */
+
+.sub-arrow {
+  display: inline-block !important;
+}
+
+#navigation ul.nav li .dropdown-menu {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+
+#navigation button.navbar-toggle {
+  border: medium none;
+  float: none;
+  left: 20px;
+  position: absolute;
+  top: -85px;
+}
+
+.header-right {
+  position: absolute;
+  right: 20px;
+  text-align: center;
+}
+
+#navigation button.navbar-toggle span.icon-bar {
+  width: 50px;
+  height: 3px;
+}
+
+#navigation button.navbar-toggle:hover span.icon-bar, #navigation button.navbar-toggle:focus span.icon-bar {
+  background-color: #0092dd;
+}
+
+#navigation button.navbar-toggle::before {
+  content: "Menu";
+  font-family: "Roboto-Bold";
+  text-transform: uppercase;
+}
+
+#navigation button.navbar-toggle:hover::before, #navigation button.navbar-toggle:focus::before {
+  color: #0092dd;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background: transparent;
+}
+
+#header section#navigation ul.nav li ul.dropdown-menu {
+  border: none;
+  box-shadow: none;
+}
+
+#header section#navigation {
+  border: none;
+}
+
+#navigation .nav.navbar-nav li a {
+  border-bottom: 2px solid #f7f7f7;
+  padding-bottom: 15px !important;
+  padding-top: 15px !important;
+}
+
+.has-submenu.highlighted {
+  color: #fff !important;
+}
+
+#navigation .navbar-collapse {
+  border: 2px solid #0092dd;
+}
+
+#banner-slider #myCarousel .carousel-inner .carousel-caption h3 {
+  font-size: 30px;
+}
+
+.carousel-inner {
+  max-height: 300px;
+}
+
+.body2 {
+  /* fallback */
+  background-color: #d7edfb;
+  background-image: url(./images/radial_bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  /* Safari 4-5, Chrome 1-9 */
+  /* Can't specify a percentage size? Laaaaaame. */
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#fff), to(#d7edfb));
+
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(circle, #fff, #d7edfb);
+
+  /* Firefox 3.6+ */
+  background: -moz-radial-gradient(circle, #fff, #d7edfb);
+
+  /* IE 10 */
+  background: -ms-radial-gradient(circle, #fff, #d7edfb);
+
+  /* Opera couldn't do radial gradients, then at some point they started supporting the -webkit- syntax, how it kinda does but it's kinda broken (doesn't do sizing) */
+
+  padding-top: 20px;
+
+}
+
+.title2 {
+  font-family: "Roboto-Bold";
+  text-align: center;
+}
+
+.content2 {
+  text-align: center;
+}
+
+.b-getstart {
+  font-size: 20px !important;
+  padding: 5px 40px;
+}
+
+.footer > .container > ul > li {
+  margin-bottom: 20px;
+}
+
+.icon-footer > a {
+  display: inline-block;
+  margin: 5px;
+}
+
+.box > .col-md-6.img {
+  float: left;
+  margin-right: 3%;
+  width: 55%;
+}
+
+.box > .col-md-6.content {
+  float: right;
+  margin-left: 0;
+  width: 42%;
+  min-height: 1px;
+  height: auto;
+}
+
+.readmore a {
+  display: block;
+  padding: 5px 10px;
+}
+
+.title-box {
+  margin-bottom: 5px;
+  line-height: 30px;
+}
+
+.readmore {
+  position: relative;
+  bottom: 0;
+  margin-top: 10px;
+}
+
+.getstart-title {
+  font-size: 22px;
+}
+
+.getstart-content {
+  font-size: 14px;
+}
+
+.b-getstart {
+  font-size: 14px;
+}
+
+.has-grid-bg {
+  margin-top: 25px;
+}
+
+.baner-text .acc {
+  font-size: 18px;
+}
+
+.body-img {
+  min-height: 150px;
+}
+
+.botton-content .h-ct::before, .botton-content .h-ct::after {
+  width: 40%;
+}
+
+.tt-content-f {
+  text-align: center;
+  display: block;
+}
+
+.callus {
+  padding: 20px;
+}
+
+/* .f-body2 .callus .b-getstart {
+  font-size: 18px;
+  width: 60%;
+  display: block;
+}
+ */
+
+.f-body2 .callus .b-getstart {
+  display: block;
+  padding: 5px 20px;
+  right: 0;
+  top: 10px;
+  width: 40%;
+}
+
+}
+
+@media only screen and (max-width: 479px) {
+
+.getstart.has-grid-bg {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.b-header a {
+  float: none;
+  display: inline-block;
+}
+
+.header-right {
+  position: static;
+  text-align: center;
+}
+
+.getstart {
+  padding: 20px 10px;
+}
+
+.footer .container ul > li {
+	display: block;
+}
+
+.footer .container > ul {
+	padding-right: 0;
+}
+
+.col-md-6.content, .col-md-6.img, .col-md-6.img img {
+	width: 100%;
+}
+
+.body2 {
+	background: rgba(0, 0, 0, 0) url("./images/backgroud-body2.jpg") no-repeat scroll center top / cover;
+	padding-top: 80px;
+	color: #747485;
+}
+
+.copyright {
+  font-size: 12px;
+}
+
+.f-content {
+  padding: 50px 5px;
+}
+
+.botton-content {
+  padding: 40px 20px;
+}
+
+.callus {
+  padding: 40px 39px;
+}
+
+.f-body2 .callus .b-getstart {
+  right: -10px;
+  top: 0;
+}
+
+#navigation .container .row .navbar.navbar-default .nav.navbar-nav.sm > li {
+  display: block!important;
+}
+
+.icon-footer > a {
+  display: block;
+  margin: 10px 15px;
+}
+
+.parent-item-mobile {
+  display: block !important;
+}
+
+.sub-arrow {
+  display: inline-block !important;
+}
+
+#navigation ul.nav li .dropdown-menu {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+
+#navigation button.navbar-toggle {
+  border: medium none;
+  float: none;
+  left: 10px;
+  position: absolute;
+  top: -85px;
+}
+
+#navigation button.navbar-toggle span.icon-bar {
+  width: 50px;
+  height: 3px;
+}
+
+#navigation button.navbar-toggle:hover span.icon-bar, #navigation button.navbar-toggle:focus span.icon-bar {
+  background-color: #0092dd;
+}
+
+#navigation button.navbar-toggle::before {
+  content: "Menu";
+  font-family: "Roboto-Bold";
+  text-transform: uppercase;
+}
+
+#navigation button.navbar-toggle:hover::before, #navigation button.navbar-toggle:focus::before {
+  color: #0092dd;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background: transparent;
+}
+
+#header section#navigation ul.nav li ul.dropdown-menu {
+  border: none;
+  box-shadow: none;
+}
+
+#header section#navigation {
+  border: none;
+}
+
+.header-right {
+  display: none;
+}
+
+#navigation .nav.navbar-nav li a {
+  border-bottom: 2px solid #f7f7f7;
+  padding-bottom: 15px !important;
+  padding-top: 15px !important;
+}
+
+.has-submenu.highlighted {
+  color: #fff !important;
+}
+
+#navigation .navbar-collapse {
+  border: 2px solid #0092dd;
+}
+
+#banner-slider #myCarousel .carousel-inner .carousel-caption h3 {
+  font-size: 22px;
+}
+
+#banner-slider #myCarousel .carousel-inner .carousel-caption p {
+  font-size: 14px;
+}
+
+#banner-slider #myCarousel .item {
+  min-height: 300px;
+}
+
+.h-title1 {
+  font-family: Roboto-Light;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.h-body1 {
+  font-size: 15px;
+}
+
+.body2 {
+  /* fallback */
+  background-color: #d7edfb;
+  background-image: url(./images/radial_bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  /* Safari 4-5, Chrome 1-9 */
+  /* Can't specify a percentage size? Laaaaaame. */
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#fff), to(#d7edfb));
+
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(circle, #fff, #d7edfb);
+
+  /* Firefox 3.6+ */
+  background: -moz-radial-gradient(circle, #fff, #d7edfb);
+
+  /* IE 10 */
+  background: -ms-radial-gradient(circle, #fff, #d7edfb);
+
+  /* Opera couldn't do radial gradients, then at some point they started supporting the -webkit- syntax, how it kinda does but it's kinda broken (doesn't do sizing) */
+
+  padding-top: 20px;
+
+}
+
+.title2 {
+  font-family: "Roboto-Bold";
+  font-size: 18px;
+  text-align: center;
+}
+
+.content2 {
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer > .container > ul > li {
+  margin-bottom: 20px;
+}
+
+.icon-footer > a {
+  display: inline-block;
+  margin: 5px;
+}
+
+.box > .col-md-6.img {
+  float: left;
+  margin-right: 3%;
+  width: 55%;
+}
+
+.box > .col-md-6.content {
+  float: right;
+  margin-left: 0;
+  width: 42%;
+  min-height: 1px;
+  height: auto;
+}
+
+.readmore a {
+  display: block;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+.title-box {
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+
+.content-box {
+  font-size: 14px;
+}
+
+.readmore {
+  position: relative;
+  bottom: 0;
+  margin-top: 10px;
+}
+
+.getstart-title {
+  font-size: 22px;
+}
+
+.getstart-content {
+  font-size: 14px;
+}
+
+.b-getstart {
+  font-size: 14px;
+}
+
+.has-grid-bg {
+  margin-top: 25px;
+}
+
+.baner-text .acc {
+  font-size: 18px;
+}
+
+.body-img {
+  min-height: 150px;
+}
+
+.botton-content .h-ct::before, .botton-content .h-ct::after {
+  width: 40%;
+}
+
+.tt-content-f {
+  font-size: 16px;
+  text-align: center;
+}
+
+.callus {
+  padding: 20px;
+}
+
+.number-ct {
+  font-size: 13px;
+}
+
+.f-body2 .callus .b-getstart {
+  font-size: 18px;
+  width: 60%;
+  display: block;
+}
+
+}
+/*End Responsive*/
